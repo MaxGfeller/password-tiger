@@ -7,6 +7,7 @@
 </head>
 <body>
 
+    <!-- Navbar -->
     <nav class="navbar navbar-default" role="navigation">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -14,6 +15,8 @@
             </div>
         </div>
     </nav>
+
+    <!-- Main Container -->
     <div class="container">
     </div>
 
@@ -26,16 +29,18 @@
                     <h4 class="modal-title">Select library...</h4>
                 </div>
                 <div class="modal-body">
-                    Select the library to use.
+                    <input type="text" id="filepath" class="form-control" placeholder="Select path to password file..."><br>
+                    <input type="password" id="filepassword" class="form-control" placeholder="Password for database...">
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Open library</button>
+                    <button type="button" class="btn btn-primary" id="open-library">Open library</button>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- Teh Javascripts -->
     <script type="text/javascript">
         global.window = window;
         global.document = window.document;
