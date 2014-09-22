@@ -1,0 +1,30 @@
+{
+  "name": "pwsafe-nw",
+  "version": "1.0.0",
+  "description": "Passwordsafe desktop app",
+  "main": "index.html",
+  "scripts": {
+    "test": "tap tests/test-*.js",
+    "start": "nodewebkit"
+  },
+  "keywords": [
+    "password",
+    "passwordsafe",
+    "psafe",
+    "gorilla",
+    "safe"
+  ],
+  "author": "Max Gfeller <max.gfeller@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^3.2.0",
+    "jquery": "^2.1.1",
+    "level-js": "^2.1.6",
+    "levelup": "^0.19.0",
+    "nodewebkit": "^0.10.5",
+    "password-safe": "0.0.1"
+  },
+  "devDependencies": {
+    "node-webkit-builder": "^0.1.3"
+  }
+}
