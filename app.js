@@ -26,9 +26,8 @@ document.querySelector('#open-library').addEventListener('click', function() {
         safe.load(contents, function(err, records) {
             if(err) return alert(err)
 
-            for(var record in records) {
-                console.log(records[record].getGroup())
-            }
+            var tree = buildTree(records)
+
             $('#select-safe-modal').modal('hide')
         })
     }))
@@ -36,6 +35,38 @@ document.querySelector('#open-library').addEventListener('click', function() {
         return alert(err.message)
     })
 })
+
+function buildTree(records) {
+    var obj = {
+      records: [],
+      children: {}
+    }
+
+    Object.keys(records).map(function(key) {
+      var r = records[key]
+
+      if(!r.getGroup() || r.getGroup().indexOf('.') === -1) return obj.records.push(r)
+
+      addToTree(obj, r)
+    })
+
+    return obj
+}
+
+function addToTree(tree, r) {
+  var g = r.getGroup()
+  var c = tree
+
+  g.split('.').map(function(group) {
+    if(!c.children[group]) c.children[group] = {
+      name: group,
+      children: {},
+      records: []
+    }
+    c = c.children[group]
+  })
+  c.records.push(r)
+}
 
 // var passwordDb = fs.readFileSync('gorilla')
 //
