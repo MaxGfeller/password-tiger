@@ -10,26 +10,29 @@ var db = levelup('tiger', { db: require('level-js') })
 
 $('#select-safe-modal').modal()
 
+var filepathField = document.querySelector('#filepath')
+var filepasswordField = document.querySelector('#filepassword')
+
 db.get('last-file', function(err, value) {
   if(err || !value) return
 
-  document.querySelector('#filepath').value = value
-  document.querySelector('#filepassword').focus()
+  filepathField.value = value
+  filepasswordField.focus()
 })
 
-document.querySelector('#filepassword').addEventListener('keyup', function(evt) {
+filepasswordField.addEventListener('keyup', function(evt) {
   if(evt.keyCode === 13) document.querySelector('#open-library').click()
 })
 
-document.querySelector('#filepath').addEventListener('click', function(evt) {
+filepathField.addEventListener('click', function(evt) {
     open(function(filename) {
         evt.target.value = filename
     })
 })
 
 document.querySelector('#open-library').addEventListener('click', function() {
-    var filename = document.querySelector('#filepath').value
-    var password = utf8.encode(document.querySelector('#filepassword').value.trim())
+    var filename = filepathField.value
+    var password = utf8.encode(filepasswordField.value.trim())
 
     if(!filename) return alert('A password file must be selected!')
 
