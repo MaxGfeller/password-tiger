@@ -1,0 +1,51 @@
+.navbar-brand-logo {
+  margin-right: 10px;
+}
+
+.main-header {
+}
+
+.li-subgroup {
+  margin-left: 20px;
+}
+
+.hide {
+  display: none;
+}
+
+.detail-view {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 60%;
+  height: 100%;
+  z-index: 12;
+  background-color: #fff;
+  box-shadow: #000 20px 20px 20px 20px;
+}
+
+.detail-header {
+  min-height: 52px;
+  width: 100%;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #e7e7e7;
+  color: #777;
+  line-height: 20px;
+  padding: 15px 15px;
+  font-size: 18px;
+}
+
+.detail-body {
+  padding: 10px;
+}
+
+.list-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.6)
+}
