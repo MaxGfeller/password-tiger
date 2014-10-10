@@ -3,6 +3,7 @@ var fs = require('fs')
 var open = require('nw-open-file')
 var concat = require('concat-stream')
 var utf8 = require('utf8')
+var htmlTree = require('./lib/tree')
 
 $('#select-safe-modal').modal()
 
@@ -27,6 +28,7 @@ document.querySelector('#open-library').addEventListener('click', function() {
             if(err) return alert(err)
 
             var tree = buildTree(records)
+            htmlTree(tree)
 
             $('#select-safe-modal').modal('hide')
         })
@@ -45,7 +47,7 @@ function buildTree(records) {
     Object.keys(records).map(function(key) {
       var r = records[key]
 
-      if(!r.getGroup() || r.getGroup().indexOf('.') === -1) return obj.records.push(r)
+      if(!r.getGroup()) return obj.records.push(r)
 
       addToTree(obj, r)
     })
@@ -67,18 +69,3 @@ function addToTree(tree, r) {
   })
   c.records.push(r)
 }
-
-// var passwordDb = fs.readFileSync('gorilla')
-//
-// var safe = new PasswordSafe({
-//     password: ''
-// })
-//
-// safe.load(passwordDb, function(err, records) {
-//     if(err) return console.error(err)
-//
-//     for(var record in records) {
-//         console.log(records[record].getPassword())
-//     }
-//
-// })
