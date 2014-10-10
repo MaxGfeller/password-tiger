@@ -3,8 +3,8 @@ var fs = require('fs')
 var open = require('nw-open-file')
 var concat = require('concat-stream')
 var utf8 = require('utf8')
-var htmlTree = require('./lib/tree')
 var levelup = require('levelup')
+var htmlTree = require('./lib/tree')
 
 var db = levelup('tiger', { db: require('level-js') })
 
@@ -15,6 +15,10 @@ db.get('last-file', function(err, value) {
 
   document.querySelector('#filepath').value = value
   document.querySelector('#filepassword').focus()
+})
+
+document.querySelector('#filepassword').addEventListener('keyup', function(evt) {
+  if(evt.keyCode === 13) document.querySelector('#open-library').click()
 })
 
 document.querySelector('#filepath').addEventListener('click', function(evt) {
