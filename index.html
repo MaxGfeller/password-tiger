@@ -4,20 +4,33 @@
     <meta charset="utf8">
     <title>Password Tiger</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/styles/tiger.css">
 </head>
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-default" role="navigation">
+    <nav class="navbar navbar-default main-header" role="navigation">
         <div class="container-fluid">
             <div class="navbar-header">
-                <span class="navbar-brand">Password Tiger</span>
+                <span class="navbar-brand"><img src="assets/images/tiger32.png" class="navbar-brand-logo">Password Tiger</span>
             </div>
         </div>
     </nav>
 
     <!-- Main Container -->
     <div class="container">
+      <div class="list-overlay"></div>
+      <div class="detail-view">
+        <div class="detail-header">
+          <span id="title"></span>
+        </div>
+        <div class="detail-body">
+          <form role="form">
+            <input type="password" id="password" class="form-control" style="float:left;margin-right:10px;width:60%">
+            <button id="show-password" class="btn btn-primary">Show password</button>
+          </form>
+        </div>
+      </div>
     </div>
 
     <!-- Modals and stuff -->
@@ -46,6 +59,7 @@
         global.document = window.document;
         global.location = location;
         global.history = history;
+        global.alert = alert;
     </script>
     <script type="text/javascript" src="assets/jquery/jquery.min.js"></script>
     <script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
