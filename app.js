@@ -4,8 +4,18 @@ var open = require('nw-open-file')
 var concat = require('concat-stream')
 var utf8 = require('utf8')
 var htmlTree = require('./lib/tree')
+var levelup = require('levelup')
+
+var db = levelup('tiger', { db: require('level-js') })
 
 $('#select-safe-modal').modal()
+
+db.get('last-file', function(err, value) {
+  if(err || !value) return
+
+  document.querySelector('#filepath').value = value
+  document.querySelector('#filepassword').focus()
+})
 
 document.querySelector('#filepath').addEventListener('click', function(evt) {
     open(function(filename) {
@@ -26,6 +36,8 @@ document.querySelector('#open-library').addEventListener('click', function() {
 
         safe.load(contents, function(err, records) {
             if(err) return alert(err)
+
+            db.put('last-file', filename, function noop() {})
 
             var tree = buildTree(records)
             htmlTree(tree)
