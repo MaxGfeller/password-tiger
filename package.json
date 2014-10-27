@@ -27,6 +27,18 @@
     "password-safe": "0.0.1",
     "utf8": "^2.0.0"
   },
+  "window": {
+    "title": "Password Tiger",
+    "toolbar": false,
+    "frame": false,
+    "width": 800,
+    "height": 500,
+    "position": "mouse",
+    "min_width": 400,
+    "min_height": 200,
+    "max_width": 800,
+    "max_height": 600
+  },
   "devDependencies": {
     "node-webkit-builder": "^0.1.3"
   }
