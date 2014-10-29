@@ -29,8 +29,8 @@
   },
   "window": {
     "title": "Password Tiger",
-    "toolbar": false,
-    "frame": false,
+    "toolbar": true,
+    "frame": true,
     "width": 800,
     "height": 500,
     "position": "mouse",
