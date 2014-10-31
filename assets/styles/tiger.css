@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 .navbar-brand-logo {
   margin-right: 10px;
 }
@@ -7,6 +11,10 @@
 
 .li-subgroup {
   margin-left: 20px;
+}
+
+a.li-subgroup {
+  color: black;
 }
 
 .hide {
