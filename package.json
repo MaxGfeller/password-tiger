@@ -30,7 +30,7 @@
   "window": {
     "title": "Password Tiger",
     "toolbar": true,
-    "frame": true,
+    "frame": false,
     "width": 800,
     "height": 500,
     "position": "mouse",
