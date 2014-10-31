@@ -29,15 +29,18 @@
   },
   "window": {
     "title": "Password Tiger",
-    "toolbar": true,
-    "frame": false,
+    "toolbar": false,
+    "frame": true,
+    "icon": "assets/images/tiger128.png",
     "width": 800,
     "height": 500,
     "position": "mouse",
     "min_width": 400,
     "min_height": 200,
     "max_width": 800,
-    "max_height": 600
+    "max_height": 600,
+    "single-instance": true,
+    "show_in_taskbar": true
   },
   "devDependencies": {
     "node-webkit-builder": "^0.1.3"
