@@ -8,9 +8,12 @@ var nw = new NwBuilder({
         './assets/**/**',
         './lib/*.js'
     ],
+    appName: 'Password Tiger',
+    appVersion: '1.0.0',
     platforms: ['osx', 'linux32', 'linux64'],
     buildType: 'versioned',
-    macZip: false
+    macZip: false,
+    macIcns: "assets/images/tiger256.icns"
 });
 
 // Log stuff you want
