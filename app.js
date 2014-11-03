@@ -41,7 +41,7 @@ document.querySelector('#open-library').addEventListener('click', function() {
             password: password
         })
 
-        safe.load(contents, function(err, records) {
+        safe.load(contents, function(err, hr, records) {
             if(err) return alert(err)
 
             db.put('last-file', filename, function noop() {})
@@ -63,9 +63,7 @@ function buildTree(records) {
       children: {}
     }
 
-    Object.keys(records).map(function(key) {
-      var r = records[key]
-
+    records.map(function(r) {
       if(!r.getGroup()) return obj.records.push(r)
 
       addToTree(obj, r)
