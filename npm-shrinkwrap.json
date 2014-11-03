@@ -546,9 +546,9 @@
       "resolved": "https://registry.npmjs.org/object-keys/-/object-keys-0.4.0.tgz"
     },
     "password-safe": {
-      "version": "0.0.1",
-      "from": "password-safe@0.0.1",
-      "resolved": "https://registry.npmjs.org/password-safe/-/password-safe-0.0.1.tgz",
+      "version": "0.0.2",
+      "from": "password-safe@0.0.2",
+      "resolved": "https://registry.npmjs.org/password-safe/-/password-safe-0.0.2.tgz",
       "dependencies": {
         "binary": {
           "version": "0.3.0",
@@ -615,6 +615,11 @@
           "version": "0.0.1",
           "from": "buffer-equal@~0.0.0",
           "resolved": "https://registry.npmjs.org/buffer-equal/-/buffer-equal-0.0.1.tgz"
+        },
+        "node-uuid": {
+          "version": "1.4.1",
+          "from": "node-uuid@~1.4.1",
+          "resolved": "https://registry.npmjs.org/node-uuid/-/node-uuid-1.4.1.tgz"
         }
       }
     },
