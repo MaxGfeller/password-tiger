@@ -4,12 +4,12 @@
   "dependencies": {
     "abstract-leveldown": {
       "version": "0.12.4",
-      "from": "abstract-leveldown@0.12.4",
+      "from": "https://registry.npmjs.org/abstract-leveldown/-/abstract-leveldown-0.12.4.tgz",
       "resolved": "https://registry.npmjs.org/abstract-leveldown/-/abstract-leveldown-0.12.4.tgz",
       "dependencies": {
         "xtend": {
           "version": "3.0.0",
-          "from": "xtend@~3.0.0",
+          "from": "https://registry.npmjs.org/xtend/-/xtend-3.0.0.tgz",
           "resolved": "https://registry.npmjs.org/xtend/-/xtend-3.0.0.tgz"
         }
       }
@@ -38,17 +38,17 @@
     },
     "core-util-is": {
       "version": "1.0.1",
-      "from": "core-util-is@1.0.1",
+      "from": "https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.1.tgz",
       "resolved": "https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.1.tgz"
     },
     "inherits": {
       "version": "2.0.1",
-      "from": "inherits@2.0.1",
+      "from": "https://registry.npmjs.org/inherits/-/inherits-2.0.1.tgz",
       "resolved": "https://registry.npmjs.org/inherits/-/inherits-2.0.1.tgz"
     },
     "isarray": {
       "version": "0.0.1",
-      "from": "isarray@0.0.1",
+      "from": "https://registry.npmjs.org/isarray/-/isarray-0.0.1.tgz",
       "resolved": "https://registry.npmjs.org/isarray/-/isarray-0.0.1.tgz"
     },
     "jquery": {
@@ -530,7 +530,7 @@
     },
     "nw-open-file": {
       "version": "1.0.1",
-      "from": "nw-open-file@1.0.1",
+      "from": "https://registry.npmjs.org/nw-open-file/-/nw-open-file-1.0.1.tgz",
       "resolved": "https://registry.npmjs.org/nw-open-file/-/nw-open-file-1.0.1.tgz",
       "dependencies": {
         "cuid": {
@@ -542,90 +542,90 @@
     },
     "object-keys": {
       "version": "0.4.0",
-      "from": "object-keys@0.4.0",
+      "from": "https://registry.npmjs.org/object-keys/-/object-keys-0.4.0.tgz",
       "resolved": "https://registry.npmjs.org/object-keys/-/object-keys-0.4.0.tgz"
     },
     "password-safe": {
       "version": "0.0.1",
-      "from": "https://registry.npmjs.org/password-safe/-/password-safe-0.0.1.tgz",
+      "from": "password-safe@0.0.1",
       "resolved": "https://registry.npmjs.org/password-safe/-/password-safe-0.0.1.tgz",
       "dependencies": {
         "binary": {
           "version": "0.3.0",
-          "from": "https://registry.npmjs.org/binary/-/binary-0.3.0.tgz",
+          "from": "binary@~0.3.0",
           "resolved": "https://registry.npmjs.org/binary/-/binary-0.3.0.tgz",
           "dependencies": {
             "chainsaw": {
               "version": "0.1.0",
-              "from": "https://registry.npmjs.org/chainsaw/-/chainsaw-0.1.0.tgz",
+              "from": "chainsaw@~0.1.0",
               "resolved": "https://registry.npmjs.org/chainsaw/-/chainsaw-0.1.0.tgz",
               "dependencies": {
                 "traverse": {
                   "version": "0.3.9",
-                  "from": "https://registry.npmjs.org/traverse/-/traverse-0.3.9.tgz",
+                  "from": "traverse@>=0.3.0 <0.4",
                   "resolved": "https://registry.npmjs.org/traverse/-/traverse-0.3.9.tgz"
                 }
               }
             },
             "buffers": {
               "version": "0.1.1",
-              "from": "https://registry.npmjs.org/buffers/-/buffers-0.1.1.tgz",
+              "from": "buffers@~0.1.1",
               "resolved": "https://registry.npmjs.org/buffers/-/buffers-0.1.1.tgz"
             }
           }
         },
         "triplesec": {
           "version": "3.0.19",
-          "from": "https://registry.npmjs.org/triplesec/-/triplesec-3.0.19.tgz",
+          "from": "triplesec@~3.0.10",
           "resolved": "https://registry.npmjs.org/triplesec/-/triplesec-3.0.19.tgz",
           "dependencies": {
             "iced-error": {
               "version": "0.0.9",
-              "from": "https://registry.npmjs.org/iced-error/-/iced-error-0.0.9.tgz",
+              "from": "iced-error@>=0.0.9",
               "resolved": "https://registry.npmjs.org/iced-error/-/iced-error-0.0.9.tgz"
             },
             "iced-lock": {
               "version": "1.0.1",
-              "from": "https://registry.npmjs.org/iced-lock/-/iced-lock-1.0.1.tgz",
+              "from": "iced-lock@^1.0.1",
               "resolved": "https://registry.npmjs.org/iced-lock/-/iced-lock-1.0.1.tgz"
             },
             "iced-runtime": {
               "version": "1.0.2",
-              "from": "https://registry.npmjs.org/iced-runtime/-/iced-runtime-1.0.2.tgz",
+              "from": "iced-runtime@>=0.0.1",
               "resolved": "https://registry.npmjs.org/iced-runtime/-/iced-runtime-1.0.2.tgz"
             },
             "more-entropy": {
               "version": "0.0.7",
-              "from": "https://registry.npmjs.org/more-entropy/-/more-entropy-0.0.7.tgz",
+              "from": "more-entropy@>=0.0.7",
               "resolved": "https://registry.npmjs.org/more-entropy/-/more-entropy-0.0.7.tgz"
             },
             "progress": {
               "version": "1.1.8",
-              "from": "https://registry.npmjs.org/progress/-/progress-1.1.8.tgz",
+              "from": "progress@~1.1.2",
               "resolved": "https://registry.npmjs.org/progress/-/progress-1.1.8.tgz"
             }
           }
         },
         "crypto-js": {
           "version": "3.1.2-5",
-          "from": "https://registry.npmjs.org/crypto-js/-/crypto-js-3.1.2-5.tgz",
+          "from": "crypto-js@~3.1.2-3",
           "resolved": "https://registry.npmjs.org/crypto-js/-/crypto-js-3.1.2-5.tgz"
         },
         "buffer-equal": {
           "version": "0.0.1",
-          "from": "https://registry.npmjs.org/buffer-equal/-/buffer-equal-0.0.1.tgz",
+          "from": "buffer-equal@~0.0.0",
           "resolved": "https://registry.npmjs.org/buffer-equal/-/buffer-equal-0.0.1.tgz"
         }
       }
     },
     "semver": {
       "version": "2.3.2",
-      "from": "semver@2.3.2",
+      "from": "https://registry.npmjs.org/semver/-/semver-2.3.2.tgz",
       "resolved": "https://registry.npmjs.org/semver/-/semver-2.3.2.tgz"
     },
     "string_decoder": {
       "version": "0.10.31",
-      "from": "string_decoder@0.10.31",
+      "from": "https://registry.npmjs.org/string_decoder/-/string_decoder-0.10.31.tgz",
       "resolved": "https://registry.npmjs.org/string_decoder/-/string_decoder-0.10.31.tgz"
     },
     "utf8": {
