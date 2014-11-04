@@ -17,6 +17,8 @@
   "author": "Max Gfeller <max.gfeller@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "attr-bind": "^3.1.0",
+    "attractor": "^2.0.0",
     "bootstrap": "^3.2.0",
     "concat-stream": "^1.4.6",
     "jquery": "^2.1.1",
