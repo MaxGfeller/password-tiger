@@ -1,6 +1,6 @@
 # Password Tiger
 
-Passwort Tiger is a password library that works with [pwsafe3](https://raw.githubusercontent.com/dol/node-passwordsafe/master/doc/formatV3.txt) files.
+Passwort Tiger is a password store that works with [pwsafe3](https://raw.githubusercontent.com/dol/node-passwordsafe/master/doc/formatV3.txt) files.
 
 ## Developing
 
