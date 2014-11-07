@@ -6,7 +6,7 @@ Passwort Tiger is a password store that works with [pwsafe3](https://raw.githubu
 
 While developing, the app can easily be run with `npm start`.
 
-To build executables for each platform, execute `node build.js`. The executables will be located
+To build executables for each platform, execute `npm run build`. The executables will be located
 in the folder `build`.
 
 ## Credits
