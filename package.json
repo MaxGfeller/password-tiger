@@ -28,6 +28,7 @@
     "levelup": "^0.19.0",
     "nodewebkit": "^0.10.5",
     "nw-open-file": "^1.0.0",
+    "observ": "^0.2.0",
     "passgen": "^1.0.1",
     "password-safe": "^0.0.2",
     "utf8": "^2.0.0"
