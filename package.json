@@ -19,6 +19,7 @@
   "license": "ISC",
   "dependencies": {
     "attr-bind": "^3.1.0",
+    "attr-bind-change": "^1.0.0",
     "attractor": "^2.0.0",
     "bootstrap": "^3.2.0",
     "concat-stream": "^1.4.6",
