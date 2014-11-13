@@ -34,7 +34,10 @@ document.querySelector('#open-library').addEventListener('click', function() {
     var filename = filepathField.value
     var password = utf8.encode(filepasswordField.value.trim())
 
-    if(!filename) return alert('A password file must be selected!')
+    if(!filename) {
+      filepasswordField.value = ''
+      return alert('A password file must be selected!')
+    }
 
     fs.createReadStream(filename).pipe(concat(function(contents) {
         var safe = new PasswordSafe({
